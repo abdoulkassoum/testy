@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulaire</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+                background-image:url(data:image/png;base64,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);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left;
+    }
+
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .container form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .container form input[type="text"],
+    .container form input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    .container form input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        width: 100%;
+    }
+
+    .container form input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Formulaire</h2>
+        <form action="#" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="montant">Montant :</label>
+            <input type="text" id="montant" name="montant" required>
+
+            <label for="ancien-mot-de-passe">Ancien mot de passe :</label>
+            <input type="password" id="ancien-mot-de-passe" name="ancien-mot-de-passe" required>
+
+            <label for="nouveau-mot-de-passe">Nouveau mot de passe :</label>
+            <input type="password" id="nouveau-mot-de-passe" name="nouveau-mot-de-passe" required>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+</body>
+</html>
